@@ -26,6 +26,7 @@ public class SuspendLearn {
                     System.out.println("ThreadB start");
                     obj.printString();
                     System.out.println("ThreadB end");
+
                 }
             };
 
