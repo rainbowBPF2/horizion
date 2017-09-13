@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="USER">
+    <resultMap id="UserMap" type="domain.UserInfo">
+        <id property="id" column="id" />
+        <result property="name" column="name" />
+        <result property="salary" column="salary" />
+        <result property="comment" column="comment" />
+    </resultMap>
+
+    <select id="findAll" resultMap="UserMap" fetchSize="1">
+        select * from userinfo
+    </select>
+
+    <select id="count" resultType="int">
+        select count(*) from userinfo
+    </select>
+
+    <select id="findUser" resultMap="UserMap" parameterType="int">
+        select * from userinfo where id= #{id}
+    </select>
+
+    <insert id="insertUser" parameterType="domain.UserInfo" useGeneratedKeys="true" keyProperty="id">
+        insert into userinfo (name,salary,comment) values (#{name},#{salary},#{comment})
+    </insert>
+
+    <delete id="deleteUser" parameterType="int" >
+        delete from userinfo where id=#{id}
+    </delete>
+
+</mapper>

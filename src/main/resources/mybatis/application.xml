@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+       default-autowire="byName">
+
+    <!--启用注解-->
+    <context:annotation-config/>
+    <context:component-scan base-package="service,dao,controller,Utility"/>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/rainbow"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="mysql"></property>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property>
+    </bean>
+
+    <bean id="abstractDAO" abstract="true">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean>
+
+    <bean id="userDAO" class="dao.UserDaoImpl" parent="abstractDAO"/>
+    <bean id="userService" class="service.UserService">
+        <property name="userDao" ref="userDAO"></property>
+    </bean>
+
+    <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxIdle" value="25"/>
+        <property name="maxWaitMillis" value="15000"/>
+        <property name="maxTotal" value="100"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testWhileIdle" value="false"/>
+    </bean>
+
+    <bean id="pool" class="redis.clients.jedis.JedisPool">
+        <constructor-arg index="0" ref="poolConfig"/>
+        <constructor-arg index="1" value="localhost"/>
+        <constructor-arg index="2" value="6379"/>
+        <constructor-arg index="3" value="2000"/>
+    </bean>
+
+</beans>
