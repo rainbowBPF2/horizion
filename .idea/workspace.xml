@@ -1,182 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="771eab64-ab24-4237-a531-212e950a7dfb" name="Default" comment="Rainbow SSM practice commit.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/BaseObject.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/BasicThread.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/ExtendPriority.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/Instance.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/ReEntryLock.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/RunFast.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/SuspendInstance$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/SuspendInstance$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/SuspendInstance.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/SuspendLearn$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/SuspendLearn$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/SuspendLearn.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/SynchronizedBlock.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/SynchronizedObject.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/Task.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/TestObject.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/ThreadA.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/ThreadA1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/ThreadA2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/ThreadB.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/ThreadHere.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/UserObject.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/UserObjectThread.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/YieldLearn.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/threadLearn/threadSea/YieldObject.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/public/cat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/public/gr.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/greenLand_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/rainbow.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/rainbow_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/rainbow_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_24.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_44.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Utility/CacheUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Utility/DBTool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Utility/JedisClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Utility/RedisCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Utility/RedisCacheImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controller/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/domain/UserInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/service/IUserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/service/UserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/application.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/user-mapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc/spring-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/errorPage/404.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/errorPage/405.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/errorPage/500.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/hello.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/hello/hello.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/result.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/student.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/rainbow/JedisTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/rainbow/MapLearn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/rainbow/TestSM.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/rainbow/TestStatic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/algorithm/Update.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/AClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/ResponChain/AbstractLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/ResponChain/ConsoleLogger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/SerializableLearn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/SingleTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/command/Broker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/command/BuyStockCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/command/Command.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/command/SellStockCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/command/Stock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/command/TestCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/iterator/Container.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/iterator/Iterator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/iterator/MainTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/iterator/NameRepo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/proxyPattern/Image.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/proxyPattern/ProxyImage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/proxyPattern/RealImage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/proxyPattern/TestImage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/template/Football.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/template/Game.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/template/RunGame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/visitor/Part.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/visitor/Visitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/visitor/VisitorImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/designPattern/visitor/VisitorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/childProcess/ChildProcess.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/childProcess/ChildProcess2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/childProcess/ChildProcess3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/childProcess/Support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/user.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/user/list_user.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/express/user/upload_file.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/js/ChainedStream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/js/Client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/js/EventLoop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/js/InitNodeJs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/js/JSLeran.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/js/PipedStream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/js/ReadStream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/js/WriteStream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/js/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/js/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/jvm/ClassLoaderTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/jvm/GCTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/jvm/LoadClassA.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/jvm/LoadClassB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/jvm/ProxyTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/jvm/StackOverflow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/jvm/TestVm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/jvm/UnSafeMem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/module/subModule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/BackUpPractice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/Common1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/ConditionNotify.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/ConditionOrder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/FairLockTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/ListTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/PCThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/PC_MQ.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/PipedIOStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/PipedReadWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/ReadWriteLock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/ReentrantWaitNotify.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/ThreadLocalLearn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadInteraction/TimerLearn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadSea/AtomicLearn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadSea/BlockingQueueLearn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadSea/CallableExecutor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadSea/ForkJoin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/src/threadSea/VolatileLearn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threadLearn/threadLearn.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/rainbow/TestBase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/rainbow/TestCaller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/rainbow/TestBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/rainbow/TestCaller.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rainbow.iml" afterPath="$PROJECT_DIR$/rainbow.iml" />
+    <list default="true" id="771eab64-ab24-4237-a531-212e950a7dfb" name="Default" comment="Rainbow SSM practice commit2.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rainbow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -207,14 +33,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MapLearn.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MapLearn.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rainbow/MapLearn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="380">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -421,6 +257,232 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Utility" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rainbow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -449,10 +511,10 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/rainbow" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20478724" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -1329,7 +1391,7 @@
       <workItem from="1505139055739" duration="599000" />
       <workItem from="1505139799110" duration="13326000" />
       <workItem from="1505203524318" duration="14833000" />
-      <workItem from="1505270931279" duration="9865000" />
+      <workItem from="1505270931279" duration="11141000" />
     </task>
     <task id="LOCAL-00001" summary="Rainbow init commit.">
       <created>1503375455895</created>
@@ -1352,7 +1414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503389246710</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Rainbow SSM practice commit.">
+      <created>1505292988572</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1505292988572</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1367,7 +1436,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288082000" />
+    <option name="totallyTimeSpent" value="289358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1469,7 +1538,8 @@
     <MESSAGE value="Rainbow update and commit twice." />
     <MESSAGE value="Rainbow commit twice." />
     <MESSAGE value="Rainbow SSM practice commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rainbow SSM practice commit." />
+    <MESSAGE value="Rainbow SSM practice commit2." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rainbow SSM practice commit2." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1601,42 +1671,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/threadLearn/src/designPattern/template/RunGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threadLearn/src/designPattern/template/Football.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threadLearn/src/designPattern/template/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threadLearn/src/designPattern/visitor/Mouse.java" />
-    <entry file="file://$PROJECT_DIR$/threadLearn/src/designPattern/visitor/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/threadLearn/src/designPattern/visitor/VisitorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/threadLearn/src/designPattern/visitor/VisitorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1987,13 +2021,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/threadLearn/algorithm/Base.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/threadLearn/algorithm/Child.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/threadLearn/algorithm/LazyLoad.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rainbow/MapLearn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="380">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/mybatis/application.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
