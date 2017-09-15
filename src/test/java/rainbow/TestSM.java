@@ -2,9 +2,18 @@ package rainbow;
 
 import Utility.RedisCache;
 import domain.UserInfo;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.context.support.XmlWebApplicationContext;
 import service.IUserService;
+import service.UserService;
 
 /**
  * Created by pengfei on 2017/9/2.
@@ -14,7 +23,18 @@ public class TestSM {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:mybatis/application.xml");
 
+        context=new FileSystemXmlApplicationContext();
+        context=new AnnotationConfigApplicationContext();
+        context=new AnnotationConfigWebApplicationContext();
+        context=new XmlWebApplicationContext();
+
+        BeanFactory factory=new XmlBeanFactory(new ClassPathResource("mybatis/application.xml"));
+        UserService service= (UserService) factory.getBean("userService");
+
+
         summaryTest(context);
+
+        ((AbstractApplicationContext)context).registerShutdownHook();
 
         System.exit(-1);
     }

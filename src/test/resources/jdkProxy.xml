@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd" default-autowire="byName">
+
+    <bean id="advice" class="rainbow.aop.jdkProxy.MessageAdvice" />
+    <bean id="target" class="rainbow.aop.jdkProxy.MessageImpl" />
+    <bean id="jdkProxyFactoryBean" class="org.springframework.aop.framework.ProxyFactoryBean" >
+        <property name="proxyInterfaces" value="rainbow.aop.jdkProxy.Message" />
+        <property name="interceptorNames" value="advice" />
+        <property name="target" ref="target"/>
+    </bean>
+
+</beans>

@@ -1,11 +1,14 @@
 package rainbow;
 
+import org.springframework.context.annotation.Configuration;
+
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Created by pengfei on 2017/8/31.
  */
+@Configuration
 public class MapLearn {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<String, String>();
