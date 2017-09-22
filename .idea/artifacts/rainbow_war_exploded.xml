@@ -27,6 +27,8 @@
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.24" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.10" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.10" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="file-copy" path="D:/apache-dbutils/commons-dbutils-1.7/commons-dbutils-1.7.jar" />
         </element>
       </element>
       <element id="directory" name="META-INF">
