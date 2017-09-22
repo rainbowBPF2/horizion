@@ -17,9 +17,9 @@ import java.util.Map;
 @Component("redisCache")
 public class RedisCacheImpl <V> implements RedisCache<String, V> {
 
-    static{
-        PropertyConfigurator.configure("log4j.properties");
-    }
+//    static{
+//        PropertyConfigurator.configure("log4j.properties");
+//    }
 
     private static Logger logger = Logger.getLogger(RedisCacheImpl.class);
     private final int EXPIRE_TIME = 3600 * 24;

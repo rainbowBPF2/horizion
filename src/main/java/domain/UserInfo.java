@@ -8,6 +8,16 @@ public class UserInfo {
     private String name;
     private double salary;
     private String comment;
+    private String password;
+
+    public UserInfo() {
+
+    }
+
+    public UserInfo(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public int getId() {
         return id;
@@ -39,6 +49,14 @@ public class UserInfo {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
 

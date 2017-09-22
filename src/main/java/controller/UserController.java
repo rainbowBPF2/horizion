@@ -13,7 +13,6 @@ import javax.annotation.Resource;
  */
 
 @Controller
-@RequestMapping()
 public class UserController {
 
     @Resource
@@ -21,7 +20,7 @@ public class UserController {
 
     @RequestMapping(value = "/hello")
     public ModelAndView helloWorld() {
-        ModelAndView mv = new ModelAndView("/hello");
+        ModelAndView mv = new ModelAndView("hello");
         UserInfo user = userService.getUserInfo(3);
         mv.addObject("message", user.getComment());
         return mv;
