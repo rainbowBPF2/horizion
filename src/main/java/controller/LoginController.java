@@ -7,6 +7,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -18,19 +19,22 @@ public class LoginController {
     private final static Logger logger=Logger.getLogger(LoginController.class);
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public ModelAndView get(){
+    public String get(){
         logger.info("Inside login get method");
-        return new ModelAndView("login","command",new UserInfo());
+        return "home";
     }
 
+    //public String login(@RequestParam("name") String name, String password, ModelMap model){
+    //public String login(String name, String password, ModelMap model){
+
     @RequestMapping(value = "/loginHere",method=RequestMethod.POST)
-    public String login(@ModelAttribute UserInfo user, ModelMap model){
+    public String login(@RequestParam("name") String name, String password, ModelMap model){
         logger.info("Login controller begin service");
 
-        model.addAttribute("password",user.getPassword());
-        model.addAttribute("name",user.getName());
+        model.addAttribute("password",password);
+        model.addAttribute("name",name);
 
-        if(user.getPassword()==null)
+        if(password==null)
             throw new RuntimeException("Password should not be null!");
 
         logger.info("Login controller end service!");

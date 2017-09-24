@@ -10,24 +10,37 @@
 <html>
 <head>
     <title>Horizon WorkSpace Page</title>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
 </head>
 <body>
 <h1>Horizon WorkSpace Page!</h1>
 <hr>
+<div style="width:400px">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        </thead>
 
-<table>
-    <tr>
-        <td>ID:</td>
-        <td>${name}</td>
-    </tr>
-    <tr>
-        <td>Name:</td>
-        <td>${password}</td>
-    </tr>
-    <tr>
-        <td><input type="date"></td>
-    </tr>
-</table>
+        <tbody>
+        <tr>
+            <td>ID:</td>
+            <td>${name}</td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td>${password}</td>
+        </tr>
+        <tr>
+            <td><input type="date"></td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>
 
 <div>
     <form action="visitStaticPage" method="get">
@@ -37,4 +50,7 @@
 </div>
 
 </body>
+
+<script src="lib/jQuery/jquery-3.2.1.js"/>
+<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"/>
 </html>
