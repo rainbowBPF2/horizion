@@ -5,6 +5,8 @@
 <title>Hello Web</title>
 </head>
 <body>
-	<h2>Hello ${message}</h2>
+	<h2>Hello User</h2>
+	<h3>${message}</h3>
+	<h3>${sessionID}</h3>
 </body>
 </html>

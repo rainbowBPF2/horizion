@@ -8,6 +8,8 @@
     <context:component-scan base-package="controller"/>
 
     <mvc:resources mapping="/pages/**" location="WEB-INF/pages/" />
+    <mvc:resources mapping="/lib/**" location="/lib/" />
+    <mvc:resources mapping="/favicon.ico" location="lib/" />
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"></property>

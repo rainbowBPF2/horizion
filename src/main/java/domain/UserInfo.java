@@ -9,6 +9,7 @@ public class UserInfo {
     private double salary;
     private String comment;
     private String password;
+    private String email;
 
     public UserInfo() {
 
@@ -57,6 +58,14 @@ public class UserInfo {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
 

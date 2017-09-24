@@ -11,30 +11,38 @@
 <html>
 <head>
     <title>Login Page</title>
+
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
 </head>
 <body>
-Welcome back! User
 <%--${time}--%>
 <%--<c:forEach items="${users}" var="user" >--%>
 <%--ID: ${user.id} Name:${user.name} <br/>--%>
 <%--</c:forEach>--%>
-<form:form method="post" action="/loginHere">
-    <table>
-        <tr>
-            <td><form:label path="name">User Name:</form:label></td>
-            <td><form:input path="name"/></td>
-        </tr>
-        <tr>
-            <td><form:label path="password">Password:</form:label></td>
-            <td><form:password path="password"/></td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <input type="submit" value="Submit">
-            </td>
-        </tr>
-    </table>
-</form:form>
+<div style="padding: 30px 50px 10px;">
+    <h2>Welcome back! User</h2>
+
+    <form:form method="post" action="/loginHere" class="bs-example bs-example-form" role="form">
+
+        <div class="input-group">
+            <form:label path="name" >User Name:</form:label>
+            <form:input path="name" class="form-control"/>
+        </div>
+        <div class="input-group">
+            <form:label path="password">Password:</form:label>
+            <form:password path="password" class="form-control"/>
+        </div>
+        <div class="input-group">
+            <br>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+
+    </form:form>
+</div>
 
 </body>
+
+<script src="lib/jQuery/jquery-3.2.1.js"/>
+<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"/>
 </html>
