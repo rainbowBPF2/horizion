@@ -12,7 +12,7 @@
 <head>
     <title>Login Page</title>
 
-    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
 <body>
