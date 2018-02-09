@@ -1,7 +1,6 @@
 package rainbow;
 
 import org.junit.*;
-import org.junit.rules.ExpectedException;
 
 /**
  * Created by pengfei on 2017/9/13.
@@ -46,5 +45,6 @@ public class TestJunit {
     @AfterClass
     public static void afterClass() {
         System.out.println("after class");
+
     }
 }

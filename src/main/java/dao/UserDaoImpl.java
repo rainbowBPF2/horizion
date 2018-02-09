@@ -1,6 +1,5 @@
 package dao;
 
-import com.alibaba.fastjson.JSON;
 import domain.UserInfo;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.stereotype.Component;
@@ -28,6 +27,12 @@ public class UserDaoImpl extends SqlSessionDaoSupport implements UserDao {
 
     public Object findUser(int userID) {
         UserInfo user = this.getSqlSession().selectOne("USER.findUser", userID);
+        return user;
+
+    }
+
+    public Object findUser(String userName) {
+        UserInfo user = this.getSqlSession().selectOne("USER.findUserByName", userName);
         return user;
 
     }

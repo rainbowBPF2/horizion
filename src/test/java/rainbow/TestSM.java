@@ -12,7 +12,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.context.support.XmlWebApplicationContext;
-import service.IUserService;
+import service.LoginService;
 import service.UserService;
 
 /**
@@ -56,7 +56,7 @@ public class TestSM {
         user.setComment("Good employee");
 
         System.out.println("begin add");
-        IUserService service = (IUserService) context.getBean("newUserService");
+        LoginService service = (LoginService) context.getBean("newUserService");
         service.addUser(user);
 
         System.out.println("begin query");
@@ -82,7 +82,7 @@ public class TestSM {
         UserInfo user = new UserInfo();
         user.setId(1005);
 
-        IUserService service = (IUserService) context.getBean("newUserService");
+        LoginService service = (LoginService) context.getBean("newUserService");
 
         UserInfo obj = service.queryUser(user);
 

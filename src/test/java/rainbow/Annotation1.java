@@ -13,9 +13,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.InitBinder;
 import service.UserService;
-import service.UserServiceImpl;
+import service.LoginServiceImpl;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -53,7 +52,7 @@ public class Annotation1 {
     }
 
     @Autowired
-    @Resource(type = UserServiceImpl.class)
+    @Resource(type = LoginServiceImpl.class)
     public void testUserService(UserService userService){
         System.out.println("Auto wired user service");
     }

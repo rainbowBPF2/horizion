@@ -10,6 +10,8 @@ public class UserInfo {
     private String comment;
     private String password;
     private String email;
+    private String create;
+    private String update;
 
     public UserInfo() {
 
@@ -66,6 +68,23 @@ public class UserInfo {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+
+    public String getCreate() {
+        return create;
+    }
+
+    public void setCreate(String create) {
+        this.create = create;
+    }
+
+    public String getUpdate() {
+        return update;
+    }
+
+    public void setUpdate(String update) {
+        this.update = update;
     }
 
 

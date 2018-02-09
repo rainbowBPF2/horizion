@@ -11,8 +11,9 @@ import org.springframework.util.StringUtils;
 /**
  * Created by pengfei on 2017/9/12.
  */
-@Service("newUserService")
-public class UserServiceImpl implements IUserService {
+
+@Service("LoginService")
+public class LoginServiceImpl implements LoginService {
 
     @Autowired
     private RedisCache redisCache;
@@ -47,5 +48,15 @@ public class UserServiceImpl implements IUserService {
         this.redisCache.set("user:" + info.getId(), user);
         System.out.println("DB got");
         return user;
+    }
+
+    public boolean checkUserAccess(String userName, String pwd){
+        UserInfo user=(UserInfo) userDao.findUser(userName);
+
+        if (user ==null ||!user.getPassword().equals(pwd)){
+            return false;
+        }else{
+            return true;
+        }
     }
 }

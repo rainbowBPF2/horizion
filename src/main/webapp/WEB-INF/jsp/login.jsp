@@ -23,7 +23,7 @@
 <div style="padding: 30px 50px 10px;">
     <h2>Welcome back! User</h2>
 
-    <form:form method="post" action="/loginHere" class="bs-example bs-example-form" role="form">
+    <form:form method="post" action="/loginHere" class="bs-example bs-example-form" modelAttribute="bean" role="form">
 
         <div class="input-group">
             <form:label path="name" >User Name:</form:label>

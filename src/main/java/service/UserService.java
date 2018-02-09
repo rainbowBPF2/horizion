@@ -10,6 +10,7 @@ import java.util.List;
 /**
  * Created by pengfei on 2017/9/2.
  */
+@Service("UserService")
 public class UserService {
 
     private UserDao userDao;
