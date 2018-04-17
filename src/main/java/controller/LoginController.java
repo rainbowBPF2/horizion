@@ -1,14 +1,13 @@
 package controller;
 
+import com.alibaba.fastjson.JSON;
 import domain.UserInfo;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.support.SessionStatus;
 import service.LoginService;
 
 import javax.servlet.http.HttpSession;
@@ -38,7 +37,7 @@ public class LoginController {
     //public String login(@RequestParam("name") String name, String password, ModelMap model){
     //public String login(String name, String password, ModelMap model){
 
-    @RequestMapping(value = "/loginHere", method = RequestMethod.POST)
+    @RequestMapping(value = "/loginHere")
     public String login(@RequestParam("name") String name, String password, ModelMap model) {
         logger.info("Login controller begin service");
 
@@ -54,7 +53,7 @@ public class LoginController {
             user.setPassword("");
             model.addAttribute("user", user);
 
-            return "redirect:homePage";
+            return "redirect:/homePage";
         } else {
             return "login";
         }
@@ -71,5 +70,30 @@ public class LoginController {
         return "redirect:/pages/static.html";
     }
 
+
+    //Return to previous path
+    @ResponseBody
+    @RequestMapping(value = "/getUserSession")
+    public String getUserSession( HttpSession session) {
+        String result="";
+
+        Object  obj=session.getAttribute("user");
+        if (obj instanceof String){
+            result= (String) obj;
+        }else if (obj instanceof UserInfo){
+            result=((UserInfo) obj).getName();
+        }
+
+        result= JSON.toJSONString(result);
+
+        return result;
+    }
+
+    @RequestMapping("/logOut")
+    @ResponseBody
+    public String logout( SessionStatus status){
+        status.setComplete();
+        return "logout";
+    }
 
 }
