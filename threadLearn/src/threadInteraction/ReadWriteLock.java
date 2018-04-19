@@ -21,7 +21,7 @@ public class ReadWriteLock {
 
 class ReadTh extends Thread {
 
-    private MyLock lock = new MyLock();
+    private MyLock lock;
 
     public ReadTh(MyLock lock) {
         this.lock = lock;
@@ -34,7 +34,7 @@ class ReadTh extends Thread {
 }
 
 class WriteTh extends Thread {
-    private MyLock lock = new MyLock();
+    private MyLock lock;
 
     public WriteTh(MyLock lock) {
         this.lock = lock;
