@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="rainbow">
-    <output-path>$PROJECT_DIR$/out/artifacts/rainbow</output-path>
-    <root id="archive" name="rainbow.war" />
-  </artifact>
-</component>
