@@ -12,5 +12,7 @@ public interface UserDao {
 
     public Object findUser(int userID);
 
+    public Object findUser(String userName);
+
     public List findAllUser();
 }

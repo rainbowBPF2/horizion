@@ -5,9 +5,54 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./lib/jQuery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+
+        $(function () {
+
+            checkLogin();
+
+        });
+
+        function checkLogin() {
+            $.ajax("/getUserSession", {
+                data: null,
+                async: false,
+                success: function (d) {
+                    var data = d;
+                    if (data != "" && data != "\"\"") {
+                        $("#login").html("注销");
+                    }
+                },
+                error: function (a, b, c) {
+                    console.log(a, b, c);
+                }
+            });
+        }
+
+        function logControl() {
+            var currentStatus = $("#login").html();
+
+            if (currentStatus == "登录") {
+                $('#myModal').modal('show');
+            } else {
+                $.ajax({
+                    url: 'logOut',
+                    data: null,
+                    async: false,
+                    success: function (d) {
+                        $("#login").html("登录");
+                        $("#alert").modal('show');
+                        console.log("User log off success!");
+                    }
+                });
+            }
+        }
+
+
+    </script>
 
 </head>
 
@@ -38,15 +83,17 @@
                         <li><a href="eastAlabo/home">中东站</a></li>
                     </ul>
                 </li>
-                <li><a href="#">我的旅行</a></li>
+                <li><a href="/homePage">我的旅行</a></li>
             </ul>
 
 
             <p class="navbar-text navbar-right" style="margin-right: 10px">
-                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">登录</button>
+                <button class="btn btn-primary btn-xs" data-toggle="modal" id="login" onclick="logControl()">登录</button>
             </p>
 
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="/account/edit">世界很大</a></li>
+                <li><a href="/account/edit">我的钱包</a></li>
                 <li><a href="/account/edit">我的账户</a></li>
             </ul>
 
@@ -56,29 +103,36 @@
 </nav>
 
 <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron blue" style="text-align: center">
         <h1>Horizon Index Page</h1>
-        <p>Horizon index page, welcome back, user!</p>
+        <p class="lead">CL'aube arrive, l'horizon sera partout. Les rivières et les lacs, selon le soleil et la lune
+            sont tous des sols Han.
+            Dawn is coming, horizon is everywhere</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
     </div>
     <div class="row">
-        <div class="col-sm-4">
-            <h3>第一列</h3>
+        <div class="col-md-4">
+            <h3>大漠孤烟</h3>
             <p>再牛逼的梦想,也抵不住你傻逼似的坚持！</p>
         </div>
-        <div class="col-sm-4">
-            <h3>第二列</h3>
+        <div class="col-md-4">
+            <h3>极地风情</h3>
             <p>再牛逼的梦想,也抵不住你傻逼似的坚持！</p>
         </div>
-        <div class="col-sm-4">
-            <h3>第三列</h3>
+        <div class="col-md-4">
+            <h3>星辰大海</h3>
             <p>再牛逼的梦想,也抵不住你傻逼似的坚持！</p>
         </div>
     </div>
+
+
+
 </div>
 
 <!-- 模态框（Modal） -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <form class="bs-example bs-example-form" role="form" action="/loginHere" method="post">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+     style="margin-top: 120px">
+    <form class="bs-example bs-example-form" role="form" action="/loginHere" method="get">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -109,18 +163,38 @@
                 </div>
 
                 <div class="modal-footer">
-                    <input type="submit" value="登录" class="btn btn-primary" style="margin-right: 10px"/>
+                    <input type="button" class="btn btn-primary" value="注册" style="margin-right: 10px">
+                    <input type="submit" value="登录" class="btn btn-primary" style="margin-right: 10px"
+                    />
                     <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal -->
     </form>
+
+
+</div>
+
+<div class="modal fade" id="alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true"
+     style="margin-top: 120px" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p >提示</p>
+            </div>
+
+            <div class="modal-body">
+                <br>
+                <p><h3 class="text-success text-center bg-success">Logout 成功！</h3></p>
+                <br>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 </body>
 <%--<script src="/lib/jQuery/jquery-3.2.1.min.js"/>--%>
 <%--<script src="/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"/>--%>
-
 
 </html>

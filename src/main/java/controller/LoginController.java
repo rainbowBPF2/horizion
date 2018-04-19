@@ -1,57 +1,99 @@
 package controller;
 
+import com.alibaba.fastjson.JSON;
 import domain.UserInfo;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.support.SessionStatus;
+import service.LoginService;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * Created by pengfei on 2017/9/22.
  */
 @Controller
+@SessionAttributes("user")
 public class LoginController {
 
-    private final static Logger logger=Logger.getLogger(LoginController.class);
+    private final static Logger logger = Logger.getLogger(LoginController.class);
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String get(){
+    @Autowired
+    private LoginService loginService;
+
+    @RequestMapping(value = "/homePage")
+    public String get(HttpSession session) {
         logger.info("Inside login get method");
-        return "home";
+
+        UserInfo currentUser = (UserInfo) session.getAttribute("user");
+        logger.info("Current User:" + currentUser.getName());
+
+        return "homePage";
     }
 
     //public String login(@RequestParam("name") String name, String password, ModelMap model){
     //public String login(String name, String password, ModelMap model){
 
-    @RequestMapping(value = "/loginHere",method=RequestMethod.POST)
-    public String login(@RequestParam("name") String name, String password, ModelMap model){
+    @RequestMapping(value = "/loginHere")
+    public String login(@RequestParam("name") String name, String password, ModelMap model) {
         logger.info("Login controller begin service");
 
-        model.addAttribute("password",password);
-        model.addAttribute("name",name);
+        UserInfo user = new UserInfo();
+        user.setName(name);
+        user.setPassword(password);
 
-        if(password==null)
-            throw new RuntimeException("Password should not be null!");
+        model.addAttribute("bean", user);
 
-        logger.info("Login controller end service!");
+        if (loginService.checkUserAccess(name, password)) {
+            logger.info("Login controller end service!");
 
-        return "homePage";
+            user.setPassword("");
+            model.addAttribute("user", user);
+
+            return "redirect:/homePage";
+        } else {
+            return "login";
+        }
     }
 
-    @RequestMapping(value="/toLoginPage",method = RequestMethod.GET)
-    public String redirect(){
+    @RequestMapping(value = "/toLoginPage", method = RequestMethod.GET)
+    public String redirect() {
         return "redirect:login";
     }
 
-    @RequestMapping(value = "/visitStaticPage",method = RequestMethod.GET)
-    public String visitStaticPage(){
+    @RequestMapping(value = "/visitStaticPage", method = RequestMethod.GET)
+    public String visitStaticPage() {
 
         return "redirect:/pages/static.html";
     }
 
+
+    //Return to previous path
+    @ResponseBody
+    @RequestMapping(value = "/getUserSession")
+    public String getUserSession( HttpSession session) {
+        String result="";
+
+        Object  obj=session.getAttribute("user");
+        if (obj instanceof String){
+            result= (String) obj;
+        }else if (obj instanceof UserInfo){
+            result=((UserInfo) obj).getName();
+        }
+
+        result= JSON.toJSONString(result);
+
+        return result;
+    }
+
+    @RequestMapping("/logOut")
+    @ResponseBody
+    public String logout( SessionStatus status){
+        status.setComplete();
+        return "logout";
+    }
 
 }

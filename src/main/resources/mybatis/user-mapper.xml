@@ -20,6 +20,10 @@
         select * from userinfo where id= #{id}
     </select>
 
+    <select id="findUserByName" resultType="domain.UserInfo" >
+        select * from userinfo where name = #{name}
+    </select>
+
     <insert id="insertUser" parameterType="domain.UserInfo" useGeneratedKeys="true" keyProperty="id">
         insert into userinfo (name,salary,comment) values (#{name},#{salary},#{comment})
     </insert>
