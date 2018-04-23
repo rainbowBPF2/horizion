@@ -1,5 +1,6 @@
 package service;
 
+import Utility.BasicTool;
 import Utility.RedisCache;
 import com.alibaba.fastjson.JSON;
 import dao.UserDao;
@@ -53,7 +54,9 @@ public class LoginServiceImpl implements LoginService {
     public boolean checkUserAccess(String userName, String pwd){
         UserInfo user=(UserInfo) userDao.findUser(userName);
 
-        if (user ==null ||!user.getPassword().equals(pwd)){
+        String expectedMd5= BasicTool.getMd5Info(pwd);
+
+        if (user ==null ||!user.getPassword().equals(expectedMd5)){
             return false;
         }else{
             return true;

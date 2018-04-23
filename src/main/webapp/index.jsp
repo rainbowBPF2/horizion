@@ -16,6 +16,10 @@
 
         });
 
+        function toRegisterPage() {
+            window.self.location="toRegisterPage";
+        }
+
         function checkLogin() {
             $.ajax("/getUserSession", {
                 data: null,
@@ -35,7 +39,7 @@
         function logControl() {
             var currentStatus = $("#login").html();
 
-            if (currentStatus == "登录") {
+            if (currentStatus === "登录") {
                 $('#myModal').modal('show');
             } else {
                 $.ajax({
@@ -92,8 +96,8 @@
             </p>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/account/edit">世界很大</a></li>
-                <li><a href="/account/edit">我的钱包</a></li>
+                <li><a href="/worldBig/edit">世界很大</a></li>
+                <li><a href="/wallet/edit">我的钱包</a></li>
                 <li><a href="/account/edit">我的账户</a></li>
             </ul>
 
@@ -132,7 +136,7 @@
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
      style="margin-top: 120px">
-    <form class="bs-example bs-example-form" role="form" action="/loginHere" method="get">
+    <form class="bs-example bs-example-form" role="form" action="/loginHere" method="post">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -163,7 +167,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <input type="button" class="btn btn-primary" value="注册" style="margin-right: 10px">
+                    <input type="button" class="btn btn-primary" value="注册" onclick="toRegisterPage()" style="margin-right: 10px">
                     <input type="submit" value="登录" class="btn btn-primary" style="margin-right: 10px"
                     />
                     <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
@@ -193,8 +197,28 @@
 </div>
 
 
+<div class="modal fade" id="alertInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true"
+     style="margin-top: 120px" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="alertInfoDialog">
+                    警告
+                </h4>
+            </div>
+
+            <div class="alert alert-warning">
+                <strong><p>页面请求出错了！</p></strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 </body>
-<%--<script src="/lib/jQuery/jquery-3.2.1.min.js"/>--%>
-<%--<script src="/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"/>--%>
 
 </html>

@@ -26,7 +26,7 @@ public class MyAccountController {
 
     @RequestMapping("/edit")
     public String editAccount() {
-        return "account/edit";
+        return "account/accountEdit";
     }
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)

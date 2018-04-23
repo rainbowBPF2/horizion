@@ -38,8 +38,6 @@ public class DomesticTicketController {
         String name = request.getParameter("name");
         String id = request.getParameter("id");
 
-        System.out.println(name);
-        System.out.println(id);
         model.addAttribute("message", "Test http servlet success!");
 
         logger.info("Test http servlet success!");

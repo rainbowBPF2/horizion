@@ -55,7 +55,7 @@ public class LoginController {
 
             return "redirect:/homePage";
         } else {
-            return "login";
+            return "redirect:/index.jsp";
         }
     }
 
@@ -94,6 +94,11 @@ public class LoginController {
     public String logout( SessionStatus status){
         status.setComplete();
         return "logout";
+    }
+
+    @RequestMapping(value = "/toRegisterPage")
+    public String toRegisterPage(){
+        return "account/accountEdit";
     }
 
 }
