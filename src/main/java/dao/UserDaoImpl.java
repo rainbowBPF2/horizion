@@ -12,10 +12,11 @@ import java.util.List;
 @Component("userDao")
 public class UserDaoImpl extends SqlSessionDaoSupport implements UserDao {
 
-    public void saveUserData(Object obj) {
+    public int saveUserData(Object obj) {
         UserInfo user = (UserInfo) obj;
         int userID = this.getSqlSession().insert("USER.insertUser", user);
         System.out.println("Insert user:" + userID);
+        return userID;
     }
 
     public void delUser(Object obj) {

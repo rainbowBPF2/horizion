@@ -25,7 +25,7 @@
     </select>
 
     <insert id="insertUser" parameterType="domain.UserInfo" useGeneratedKeys="true" keyProperty="id">
-        insert into userinfo (name,salary,comment) values (#{name},#{salary},#{comment})
+        insert into userinfo (name,password,salary,comment,email) values (#{name},#{password},#{salary},#{comment},#{email})
     </insert>
 
     <delete id="deleteUser" parameterType="int" >

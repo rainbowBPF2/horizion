@@ -1,14 +1,14 @@
 package controller;
 
+import Utility.BasicTool;
 import domain.UserInfo;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
@@ -24,9 +24,12 @@ public class MyAccountController {
 
     private final static Logger logger = Logger.getLogger(MyAccountController.class);
 
+    @Autowired
+    private UserService userService;
+
     @RequestMapping("/edit")
     public String editAccount() {
-        return "account/accountEdit";
+        return "account/accountRegister";
     }
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
@@ -39,15 +42,14 @@ public class MyAccountController {
         String rootPath = request.getContextPath();
         writeFile(file, rootPath);
 
-        String name = user.getName();
-        String password = user.getPassword();
-        String email = user.getEmail();
+        String secRetPwd = BasicTool.getMd5Info(user.getPassword());
+        user.setPassword(secRetPwd);
 
-        //TODO, save user service call.
+        userService.saveUser(user);
 
         model.addAttribute("message", "Save user success!");
 
-        return "account/success";
+        return "account/registerSuccess";
     }
 
     private void writeFile(MultipartFile file, String rootPath) {

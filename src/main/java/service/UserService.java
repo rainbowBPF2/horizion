@@ -15,6 +15,7 @@ public class UserService {
 
     private UserDao userDao;
 
+    @Autowired
     public void setUserDao(UserDao userDao) {
         this.userDao = userDao;
     }
@@ -28,5 +29,10 @@ public class UserService {
     public List<UserInfo> getUserList() {
         List<UserInfo> list = userDao.findAllUser();
         return list;
+    }
+
+    public int saveUser(UserInfo user) {
+        int userId = userDao.saveUserData(user);
+        return userId;
     }
 }

@@ -59,9 +59,9 @@ public class LoginController {
         }
     }
 
-    @RequestMapping(value = "/toLoginPage", method = RequestMethod.GET)
+    @RequestMapping(value = "/toIndexPage", method = RequestMethod.GET)
     public String redirect() {
-        return "redirect:login";
+        return "redirect:/index.jsp";
     }
 
     @RequestMapping(value = "/visitStaticPage", method = RequestMethod.GET)
@@ -98,7 +98,7 @@ public class LoginController {
 
     @RequestMapping(value = "/toRegisterPage")
     public String toRegisterPage(){
-        return "account/accountEdit";
+        return "account/accountRegister";
     }
 
 }
