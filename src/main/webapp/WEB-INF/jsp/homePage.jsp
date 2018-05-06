@@ -11,6 +11,7 @@
 <head>
     <title>Horizon WorkSpace Page</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-3.3.7-dist/css/bootstrap-table.css">
     <style>
         .side-nav {
             position: fixed;
@@ -22,19 +23,32 @@
             padding: 20px;
             overflow-x: hidden;
             overflow-y: auto;
-            background-color: rgba(255,255,255,.06);
+            background-color: rgba(255, 255, 255, .06);
             border-right: 1px solid #eee;
-            width:300px;
+            width: 16.6%;
             margin-right: -21px;
             margin-bottom: 20px;
             margin-left: -20px;
         }
 
-        .rounded-circle{
+        .rounded-circle {
             display: inline-block;
             border-radius: 50%;
         }
     </style>
+
+    <script>
+        function myFormatter(value) {
+            if (value == null || value == undefined) {
+                return "-";
+            } else if (value==1) {
+                return "<small class='text-danger'>Deleted</small>";
+            } else if(value!=1){
+                return "<small class='text-success'>Normal</small>";
+            }
+        }
+    </script>
+
 
 </head>
 <body>
@@ -46,7 +60,7 @@
     <div class="collapse navbar-collapse green" id="navbarsExampleDefault">
         <ul class="navbar-nav nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/toIndexPage">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Settings</a>
@@ -58,12 +72,7 @@
                 <a class="nav-link" href="#">Help</a>
             </li>
         </ul>
-        <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-success">提交</button>
-        </form>
+
     </div>
 </nav>
 
@@ -109,163 +118,56 @@
             </ul>
         </nav>
 
-        <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3" style="margin-top: 80px">
+        <main class="col-sm-9  col-md-10 " style="margin-top: 70px">
             <h1>Dashboard</h1>
 
             <section class="row text-center placeholders">
                 <div class="col-6 col-sm-3 placeholder">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200"
-                         height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="180"
+                         height="180" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
                     <h4>Label</h4>
                     <div class="text-muted">Something else</div>
                 </div>
                 <div class="col-6 col-sm-3 placeholder">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200"
-                         height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="180"
+                         height="180" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
                     <h4>Label</h4>
                     <span class="text-muted">Something else</span>
                 </div>
                 <div class="col-6 col-sm-3 placeholder">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200"
-                         height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="180"
+                         height="180" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
                     <h4>Label</h4>
                     <span class="text-muted">Something else</span>
                 </div>
                 <div class="col-6 col-sm-3 placeholder">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200"
-                         height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="180"
+                         height="180" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
                     <h4>Label</h4>
                     <span class="text-muted">Something else</span>
                 </div>
             </section>
 
             <h2>Polaris Daemon</h2>
-            <div class="table-responsive">
-                <table class="table table-strip">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1,001</td>
-                        <td>Lorem</td>
-                        <td>ipsum</td>
-                        <td>dolor</td>
-                        <td>sit</td>
-                    </tr>
-                    <tr>
-                        <td>1,002</td>
-                        <td>amet</td>
-                        <td>consectetur</td>
-                        <td>adipiscing</td>
-                        <td>elit</td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>Integer</td>
-                        <td>nec</td>
-                        <td>odio</td>
-                        <td>Praesent</td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>libero</td>
-                        <td>Sed</td>
-                        <td>cursus</td>
-                        <td>ante</td>
-                    </tr>
-                    <tr>
-                        <td>1,004</td>
-                        <td>dapibus</td>
-                        <td>diam</td>
-                        <td>Sed</td>
-                        <td>nisi</td>
-                    </tr>
-                    <tr>
-                        <td>1,005</td>
-                        <td>Nulla</td>
-                        <td>quis</td>
-                        <td>sem</td>
-                        <td>at</td>
-                    </tr>
-                    <tr>
-                        <td>1,006</td>
-                        <td>nibh</td>
-                        <td>elementum</td>
-                        <td>imperdiet</td>
-                        <td>Duis</td>
-                    </tr>
-                    <tr>
-                        <td>1,007</td>
-                        <td>sagittis</td>
-                        <td>ipsum</td>
-                        <td>Praesent</td>
-                        <td>mauris</td>
-                    </tr>
-                    <tr>
-                        <td>1,008</td>
-                        <td>Fusce</td>
-                        <td>nec</td>
-                        <td>tellus</td>
-                        <td>sed</td>
-                    </tr>
-                    <tr>
-                        <td>1,009</td>
-                        <td>augue</td>
-                        <td>semper</td>
-                        <td>porta</td>
-                        <td>Mauris</td>
-                    </tr>
-                    <tr>
-                        <td>1,010</td>
-                        <td>massa</td>
-                        <td>Vestibulum</td>
-                        <td>lacinia</td>
-                        <td>arcu</td>
-                    </tr>
-                    <tr>
-                        <td>1,011</td>
-                        <td>eget</td>
-                        <td>nulla</td>
-                        <td>Class</td>
-                        <td>aptent</td>
-                    </tr>
-                    <tr>
-                        <td>1,012</td>
-                        <td>taciti</td>
-                        <td>sociosqu</td>
-                        <td>ad</td>
-                        <td>litora</td>
-                    </tr>
-                    <tr>
-                        <td>1,013</td>
-                        <td>torquent</td>
-                        <td>per</td>
-                        <td>conubia</td>
-                        <td>nostra</td>
-                    </tr>
-                    <tr>
-                        <td>1,014</td>
-                        <td>per</td>
-                        <td>inceptos</td>
-                        <td>himenaeos</td>
-                        <td>Curabitur</td>
-                    </tr>
-                    <tr>
-                        <td>1,015</td>
-                        <td>sodales</td>
-                        <td>ligula</td>
-                        <td>in</td>
-                        <td>libero</td>
-                    </tr>
-                    </tbody>
+
+            <div id="toolbar" class="btn-group">
+                <button id="btn_add" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+                </button>
+                <button id="btn_edit" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
+                </button>
+                <button id="btn_delete" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+                </button>
+            </div>
+
+            <div class="table-responsive col-md-12 ">
+                <table id="mainTable" class="table ">
+
                 </table>
+                <br>
+                <br>
             </div>
         </main>
     </div>
@@ -276,7 +178,61 @@
 <!-- Bootstrap core JavaScript================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="../../lib/jQuery/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../lib/bootstrap-3.3.7-dist/js/bootstrap-table.js"></script>
+<script src="../../lib/bootstrap-3.3.7-dist/js/bootstrap-table-zh-CN.js"></script>
+<script>
+
+    $("#mainTable").bootstrapTable({
+        url: '/home/listUser',         //请求后台的URL（*）
+        method: 'get',                      //请求方式（*）
+        toolbar: '#toolbar',                //工具按钮用哪个容器
+        striped: true,                      //是否显示行间隔色
+        cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+        pagination: true,                   //是否显示分页（*）
+        sortable: true,                     //是否启用排序
+        sortOrder: "asc",                   //排序方式
+        pageNumber: 1,                       //初始化加载第一页，默认第一页
+        pageSize: 10,                       //每页的记录行数（*）
+        pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
+        search: true,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+        strictSearch: true,
+        showColumns: true,                  //是否显示所有的列
+        showRefresh: true,                  //是否显示刷新按钮
+        align: 'center',
+        clickToSelect: true,
+        columns: [
+            {
+                title: '全选',
+                field: 'select',
+                checkbox: true,
+                width: 25,
+                align: 'center',
+                valign: 'middle'
+
+            }, {
+                field: 'id',
+                title: 'Item ID',
+            }, {
+                field: 'name',
+                title: 'Item Name',
+
+            }, {
+                field: 'price',
+                title: 'Item Price',
+
+            }, {
+                field: 'status',
+                title: 'Status',
+                // sortable:true,
+                formatter : myFormatter
+            }],
+        height: $(window).height() -260
+
+    });
+
+</script>
+
 </html>

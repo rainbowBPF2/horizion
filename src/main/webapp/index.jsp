@@ -87,7 +87,6 @@
                         <li><a href="eastAlabo/home">中东站</a></li>
                     </ul>
                 </li>
-                <li><a href="/homePage">我的旅行</a></li>
             </ul>
 
 
@@ -96,9 +95,19 @@
             </p>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/worldBig/edit">世界很大</a></li>
-                <li><a href="/wallet/edit">我的钱包</a></li>
-                <li><a href="/account/edit">我的账户</a></li>
+                <li><a href="/homePage">Home Page</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        我的旅行<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/worldBig/edit">世界很大</a></li>
+                        <li><a href="/wallet/edit">钱包很小</a></li>
+                        <li><a href="/wallet/edit">曾经足迹</a></li>
+                    </ul>
+
+                </li>
             </ul>
 
 

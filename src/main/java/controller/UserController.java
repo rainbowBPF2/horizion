@@ -1,12 +1,16 @@
 package controller;
 
+import com.alibaba.fastjson.JSON;
 import domain.UserInfo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import service.UserService;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by pengfei on 2017/9/3.
@@ -26,4 +30,68 @@ public class UserController {
         return mv;
     }
 
+    @RequestMapping(value = "/home/listUser")
+    @ResponseBody
+    public String getAllUser() {
+        List list = new ArrayList<TestObj>();
+        for (int i = 0; i < 105; i++) {
+
+            int status=i%9;
+
+            TestObj temp = new TestObj(Integer.toString(i), "name" + i, "price" + i,Integer.toString(status));
+
+            list.add(temp);
+        }
+
+        String resultJson= JSON.toJSONString(list);
+        return resultJson;
+    }
+
+
+}
+
+class TestObj {
+    private String id;
+    private String name;
+    private String price;
+    private String status;
+
+    public TestObj(String id, String name, String price,String status) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.status=status;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }
