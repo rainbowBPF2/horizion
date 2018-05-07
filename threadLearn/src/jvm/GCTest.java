@@ -1,7 +1,5 @@
 package jvm;
 
-import com.sun.glass.ui.Size;
-
 /**
  * Created by pengfei on 2017/9/6.
  */

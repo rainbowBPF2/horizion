@@ -1,12 +1,15 @@
+/*
 package jvm;
 
 import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
 
+*/
 /**
  * Created by pengfei on 2017/9/6.
- */
+ *//*
+
 public class UnSafeMem {
     private static final int _1M=1024*1024;
 
@@ -21,3 +24,4 @@ public class UnSafeMem {
 
     }
 }
+*/
