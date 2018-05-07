@@ -21,7 +21,7 @@
         }
 
         function checkLogin() {
-            $.ajax("/getUserSession", {
+            $.ajax("getUserSession", {
                 data: null,
                 async: false,
                 success: function (d) {
