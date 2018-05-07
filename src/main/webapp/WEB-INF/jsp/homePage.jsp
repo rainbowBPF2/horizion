@@ -11,7 +11,7 @@
 <head>
     <title>Horizon WorkSpace Page</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../lib/bootstrap-3.3.7-dist/css/bootstrap-table.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap-table.css">
     <style>
         .side-nav {
             position: fixed;
@@ -60,7 +60,7 @@
     <div class="collapse navbar-collapse green" id="navbarsExampleDefault">
         <ul class="navbar-nav nav">
             <li class="nav-item active">
-                <a class="nav-link" href="/toIndexPage">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="toIndexPage">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Settings</a>
@@ -178,15 +178,15 @@
 <!-- Bootstrap core JavaScript================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
-<script>window.jQuery || document.write('<script src="../../lib/jQuery/jquery-3.2.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="lib/jQuery/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="../../lib/bootstrap-3.3.7-dist/js/bootstrap-table.js"></script>
-<script src="../../lib/bootstrap-3.3.7-dist/js/bootstrap-table-zh-CN.js"></script>
+<script src="lib/bootstrap-3.3.7-dist/js/bootstrap-table.js"></script>
+<script src="lib/bootstrap-3.3.7-dist/js/bootstrap-table-zh-CN.js"></script>
 <script>
 
     $("#mainTable").bootstrapTable({
-        url: '/home/listUser',         //请求后台的URL（*）
+        url: 'home/listUser',         //请求后台的URL（*）
         method: 'get',                      //请求方式（*）
         toolbar: '#toolbar',                //工具按钮用哪个容器
         striped: true,                      //是否显示行间隔色

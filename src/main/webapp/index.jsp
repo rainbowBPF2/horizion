@@ -5,9 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="./lib/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="lib/jQuery/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script>
 
         $(function () {
@@ -95,16 +95,16 @@
             </p>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/homePage">Home Page</a></li>
+                <li><a href="homePage">Home Page</a></li>
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         我的旅行<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="/worldBig/edit">世界很大</a></li>
-                        <li><a href="/wallet/edit">钱包很小</a></li>
-                        <li><a href="/wallet/edit">曾经足迹</a></li>
+                        <li><a href="worldBig/edit">世界很大</a></li>
+                        <li><a href="wallet/edit">钱包很小</a></li>
+                        <li><a href="wallet/edit">曾经足迹</a></li>
                     </ul>
 
                 </li>
@@ -145,7 +145,7 @@
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
      style="margin-top: 120px">
-    <form class="bs-example bs-example-form" role="form" action="/loginHere" method="post">
+    <form class="bs-example bs-example-form" role="form" action="loginHere" method="post">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
