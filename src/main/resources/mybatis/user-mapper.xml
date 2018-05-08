@@ -6,10 +6,11 @@
         <result property="name" column="name" />
         <result property="salary" column="salary" />
         <result property="comment" column="comment" />
+        <result property="password" column="password" />
     </resultMap>
 
-    <select id="findAll" resultMap="UserMap" fetchSize="1">
-        select * from userinfo
+    <select id="findAll" resultMap="UserMap" >
+        select * from userinfo limit 1000 ;
     </select>
 
     <select id="count" resultType="int">

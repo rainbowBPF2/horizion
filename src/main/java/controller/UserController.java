@@ -34,14 +34,22 @@ public class UserController {
     @ResponseBody
     public String getAllUser() {
         List list = new ArrayList<TestObj>();
-        for (int i = 0; i < 105; i++) {
+       /* for (int i = 0; i < 105; i++) {
 
             int status=i%9;
 
             TestObj temp = new TestObj(Integer.toString(i), "name" + i, "price" + i,Integer.toString(status));
 
             list.add(temp);
-        }
+        }*/
+
+       List<UserInfo> userlist =this.userService.getUserList();
+
+       for(UserInfo obj:userlist){
+           TestObj test=new TestObj(obj.getId(),obj.getName(),obj.getSalary(),obj.getComment());
+           list.add(test);
+       }
+
 
         String resultJson= JSON.toJSONString(list);
         return resultJson;
@@ -51,23 +59,23 @@ public class UserController {
 }
 
 class TestObj {
-    private String id;
+    private int id;
     private String name;
-    private String price;
+    private double price;
     private String status;
 
-    public TestObj(String id, String name, String price,String status) {
+    public TestObj(int id, String name, double price,String status) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.status=status;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -79,11 +87,11 @@ class TestObj {
         this.name = name;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
