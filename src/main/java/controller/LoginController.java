@@ -29,7 +29,9 @@ public class LoginController {
         logger.info("Inside login get method");
 
         UserInfo currentUser = (UserInfo) session.getAttribute("user");
-        logger.info("Current User:" + currentUser.getName());
+        if(currentUser!=null){
+            logger.info("Current User:" + currentUser.getName());
+        }
 
         return "homePage";
     }
